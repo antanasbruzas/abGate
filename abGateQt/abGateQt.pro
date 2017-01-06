@@ -11,6 +11,9 @@ CONFIG += shared plugin
 TARGET = abGateQt
 TEMPLATE = lib
 
+QMAKE_CXXFLAGS += $(CPPFLAGS) -g
+QMAKE_LFLAGS += $(LDFLAGS)
+
 SOURCES +=\
         mainwindow.cpp \
     abgatestyle.cpp \
