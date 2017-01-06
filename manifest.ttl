@@ -1,0 +1,19 @@
+@prefix lv2:  <http://lv2plug.in/ns/lv2core#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix ui:   <http://lv2plug.in/ns/extensions/ui#>.
+
+<http://hippie.lt/lv2/gate>
+	a lv2:Plugin, lv2:GatePlugin;
+	lv2:binary <gate.so>;
+	rdfs:seeAlso <gate.ttl>.
+
+<http://hippie.lt/lv2/gate/guiQt4>
+	a ui:Qt4UI;
+	ui:binary <libabGateQt.so>;
+	rdfs:seeAlso <gate.ttl>.
+
+<http://hippie.lt/lv2/gate/gui>
+	a ui:GtkUI;
+	ui:binary <gate_gui.so>;
+	rdfs:seeAlso <gate.ttl>.
+

@@ -1,0 +1,39 @@
+abGate
+
+Version 1.1.8 - 2017-01-06 13:00 UTC+02
+	* updated Makefile with patches provided by Debian maintainers
+	* cleaned up from some of the unused code
+	* updated background image handling to display correctly on Gtk hosts where additional elements are provided by the host itself
+
+Version 1.1.7 - 2014-01-13 11:00 UTC+02
+	* Bugfixes and performance improvement by Sebastian Reichelt
+
+Version 1.1.6 - 2012-04-21 09:00 UTC+02
+	* updated Makefile and ttl files
+
+Version 1.1.5 - 2012-04-20 10:30 UTC+02
+	* Qt4 GUI uses QWidget instead of QMainWindow
+	* removed main.cpp from Qt4 GUI
+	* changed filenames for Qt4 GUI
+
+Version 1.1.4 - 2012-04-16 10:00 UTC+02
+	* added new Qt4 GUI
+
+Version 1.1.3 - 2011-03-06 09:20 UTC+02
+	* changed required compiler to g++
+
+Version 1.1.2 - 2011-02-15 14:25 UTC+02
+	* fixed bypass switch buzz in Qtractor
+
+Version 1.1.1 - 2011-01-29 21:50 UTC+02
+	* new presets feature using xml file
+
+Version 1.1.0 - 2011-01-27 14:55 UTC+02
+	* lv2-c++-tools removed from dependencies
+
+Version 1.0.1 - 2011-01-26 18:44 UTC+02
+	* updated default installation directory
+	* added plugin_configuration.h file for easier png files management when changing the default directory
+
+Version 1.0 - 2011-01-26
+	* initial public release

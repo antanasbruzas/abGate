@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/images">
+        <file alias="Background">background.png</file>
+        <file alias="Bypass On">bypass_on.png</file>
+        <file alias="Bypass Off">bypass_off.png</file>
+    </qresource>
+</RCC>

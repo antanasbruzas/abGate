@@ -27,3 +27,8 @@
 *.exe
 *.out
 *.app
+
+# Eclipse specific
+*.project
+*.cproject
+.settings/*
