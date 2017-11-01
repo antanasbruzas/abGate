@@ -10,7 +10,7 @@ $(BUNDLE): manifest.ttl gate.ttl gate.so gate_gui.so bypass_on.png bypass_off.pn
 	cp $^ $(BUNDLE)
 
 abGateQt/libabGateQt.so:
-	cd abGateQt; qmake-qt4; make
+	cd abGateQt; qmake; make
 
 gate.so: gate.cpp
 	g++ $(LDFLAGS) $(CPPFLAGS) $(CFLAGS) -g -O3 -shared -fPIC -DPIC -Wl,--as-needed gate.cpp `pkg-config --cflags --libs lv2` -o gate.so

@@ -4,7 +4,7 @@
 #
 #-------------------------------------------------
 
-QT       += core gui
+QT       += core gui widgets
 
 CONFIG += shared plugin
 
@@ -17,7 +17,7 @@ QMAKE_LFLAGS += $(LDFLAGS)
 SOURCES +=\
         mainwindow.cpp \
     abgatestyle.cpp \
-    gate_gui_Qt4.cpp
+    gate_gui_Qt5.cpp
 
 HEADERS  += mainwindow.h \
     abgatestyle.h \

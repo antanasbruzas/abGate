@@ -18,6 +18,7 @@
  */
 
 #include <QtGui>
+#include <QStyleOptionSlider>
 #include <iostream>
 #include <cmath>
 #include "abgatestyle.h"

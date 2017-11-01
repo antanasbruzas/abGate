@@ -1,6 +1,6 @@
-/* abGate - Qt4 GUI
+/* abGate - Qt5 GUI
  *
- * Copyright 2011 Antanas Bružas
+ * Copyright 2017 Antanas Bružas
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -52,7 +52,7 @@ static void portEventGate_gui(LV2UI_Handle ui, uint32_t port_index, uint32_t buf
 static void init_gui() {
 
     gate_guiDescriptor = (LV2UI_Descriptor *)malloc(sizeof(LV2UI_Descriptor));
-    gate_guiDescriptor->URI = "http://hippie.lt/lv2/gate/guiQt4";
+    gate_guiDescriptor->URI = "http://hippie.lt/lv2/gate/guiQt5";
     gate_guiDescriptor->instantiate = instantiateGate_gui;
     gate_guiDescriptor->cleanup = cleanupGate_gui;
     gate_guiDescriptor->port_event = portEventGate_gui;

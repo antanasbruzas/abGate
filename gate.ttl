@@ -6,8 +6,8 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
 
 
-<http://hippie.lt/lv2/gate/guiQt4>
-	a ui:Qt4UI;
+<http://hippie.lt/lv2/gate/guiQt5>
+	a ui:Qt5UI;
 	ui:requiredFeature ui:makeResident;
 	ui:optionalFeature ui:noUserResize.
 
@@ -37,7 +37,7 @@
 
   	doap:license <http://usefulinc.com/doap/licenses/lgpl>;
 
-	ui:ui <http://hippie.lt/lv2/gate/guiQt4>;
+	ui:ui <http://hippie.lt/lv2/gate/guiQt5>;
 	ui:ui <http://hippie.lt/lv2/gate/gui>;
   	
 	lv2:port [

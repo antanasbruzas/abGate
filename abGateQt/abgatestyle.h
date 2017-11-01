@@ -20,6 +20,7 @@
 #ifndef ABGATESTYLE_H
 #define ABGATESTYLE_H
 
+#include <QCommonStyle>
 #include <QtGui>
 
 class abGateStyle : public QCommonStyle
