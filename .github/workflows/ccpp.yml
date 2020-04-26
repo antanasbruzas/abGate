@@ -14,7 +14,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: dependencies
-      run: sudo apt-get install lv2-dev libgtkmm-2.4-dev qt5-qmake
+      run: sudo apt-get install lv2-dev libgtkmm-2.4-dev qt5-qmake qt5-default
     - name: make
       run: make
     - name: make install
