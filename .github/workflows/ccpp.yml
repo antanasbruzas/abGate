@@ -22,4 +22,4 @@ jobs:
     - uses: actions/upload-artifact@v1
       with:
         name: abGate
-        path: /usr/lib/lv2/
+        path: /usr/lib/lv2/abGate.lv2
