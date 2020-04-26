@@ -11,7 +11,7 @@ CONFIG += shared plugin
 TARGET = abGateQt
 TEMPLATE = lib
 
-QMAKE_CXXFLAGS += $(CPPFLAGS) -g
+QMAKE_CXXFLAGS += $$(CXXFLAGS) -g
 QMAKE_LFLAGS += $(LDFLAGS)
 
 SOURCES +=\
