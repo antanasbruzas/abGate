@@ -19,3 +19,7 @@ jobs:
       run: make
     - name: make install
       run: sudo make install
+    - uses: actions/upload-artifact@v1
+      with:
+        name: abGate
+        path: /usr/lib/lv2/
