@@ -2,8 +2,9 @@
 
 BUNDLE = abGate.lv2
 PREFIX ?= /usr
-INSTALL_DIR = $(DESTDIR)$(PREFIX)/lib/lv2
+INSTALL_DIR ?= $(DESTDIR)$(PREFIX)/lib/lv2
 CXXFLAGS ?= -g -O3
+CXX ?= g++
 
 $(BUNDLE): manifest.ttl gate.ttl gate.so gate_gui.so bypass_on.png bypass_off.png knob.png background.png abGateQt/libabGateQt.so
 	rm -rf $(BUNDLE)
@@ -11,7 +12,7 @@ $(BUNDLE): manifest.ttl gate.ttl gate.so gate_gui.so bypass_on.png bypass_off.pn
 	cp $^ $(BUNDLE)
 
 abGateQt/libabGateQt.so:
-	cd abGateQt; qmake-qt5; $(MAKE)
+	cd abGateQt; qmake; $(MAKE)
 
 gate.so: gate.cpp
 	$(CXX) $(LDFLAGS) $(CXXFLAGS) $(CFLAGS) -shared -fPIC -DPIC -Wl,--as-needed gate.cpp `pkg-config --cflags --libs lv2` -o gate.so
