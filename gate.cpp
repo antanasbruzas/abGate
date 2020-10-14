@@ -44,7 +44,7 @@ public:
 	int state, holding;
 };
 
-static LV2_Handle instantiateGate(const _LV2_Descriptor *descriptor, double s_rate, const char *path, const LV2_Feature * const * features) {
+static LV2_Handle instantiateGate(const LV2_Descriptor *descriptor, double s_rate, const char *path, const LV2_Feature * const * features) {
 	Gate *plugin_data = new Gate;
 	plugin_data->sample_rate = s_rate;
 	return (LV2_Handle) plugin_data;
