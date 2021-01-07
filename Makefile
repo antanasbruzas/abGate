@@ -5,8 +5,9 @@ PREFIX ?= /usr
 INSTALL_DIR ?= $(DESTDIR)$(PREFIX)/lib/lv2
 CXXFLAGS ?= -g -O3
 CXX ?= g++
+TARGET ?= gate_gui.so abGateQt/libabGateQt.so gate.so
 
-$(BUNDLE): manifest.ttl gate.ttl gate.so gate_gui.so bypass_on.png bypass_off.png knob.png background.png abGateQt/libabGateQt.so
+$(BUNDLE): manifest.ttl gate.ttl bypass_on.png bypass_off.png knob.png background.png $(TARGET)
 	rm -rf $(BUNDLE)
 	mkdir $(BUNDLE)
 	cp $^ $(BUNDLE)
